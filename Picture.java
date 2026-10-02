@@ -29,6 +29,27 @@ public class Picture
     /**
      * Draw this picture.
      */
+    public void amanecer()
+    {  
+       
+        moon.changeSize(50);
+        moon.makeVisible();
+        moon.slowMoveVertical(-75);
+        moon.makeInvisible();
+        
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(300);
+        sun.changeSize(80);
+        sun.makeVisible();
+        sun.slowMoveVertical(-340);
+    
+    }
+    
+    /**
+     * Draw this picture.
+     */
     public void draw()
     {
         wall = new Square();
